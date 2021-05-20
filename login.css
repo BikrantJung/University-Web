@@ -1,0 +1,211 @@
+.loginArea {
+    height: 500px;
+    margin: 30px;
+    position: relative;
+    background:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url(images/logo-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box {
+    height: 480px;
+    width: 380px;
+    background: rgba(255,255,255,0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.form2 {
+    margin: 30px 0px;
+    padding: 0px 40px;
+    box-sizing: border-box;
+    position: relative;
+    transition-duration: 500ms;
+}
+
+.heading {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* background-color: red; */
+    margin: 5px 50px 0px 50px;
+    padding: 10px 0px 30px 0px;
+    border-bottom: 1px solid silver;
+    user-select: none;
+    font-family: "Helvetica";
+    
+}
+
+.loginArea .heading h3 {
+    margin: 10px;
+    font-weight: normal;
+    position: relative;
+    cursor: pointer;
+    transition: 400ms;
+    color: white;
+}
+
+.login::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+}
+
+span {
+    color: black;
+}
+
+
+/* FOrm Box */
+
+.form {
+    margin: 30px 0px;
+    padding: 0px 40px;
+    box-sizing: border-box;
+    position: relative;
+    transition-duration: 500ms;
+}
+
+.emailArea {
+    position: relative;
+    border-bottom: 2px solid silver;
+    margin: 30px 0px;
+}
+
+.password {
+    margin-bottom: 17px;
+}
+
+.emailArea input {
+    padding: 10px 15px 5px 10px;
+    text-align: start;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    caret-color: white;
+}
+::placeholder{
+    color: white;
+}
+.emailArea input:focus::placeholder {
+    font-size: 0px;
+    transition-duration: 400ms;
+}
+
+/* This property is used to hide the arrows in type=[number] field */
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} */
+
+.line {
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+    transform: translateY(2px);
+    width: 0%;
+    margin: auto;
+    background-color: blue;
+    height: 2px;
+}
+
+.emailArea input:focus~span {
+    width: 100%;
+    transition: 300ms;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.finalText {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.finalText button {
+    width: fit-content;
+    margin: 10px auto 0px auto;
+    padding: 16px 22px;
+    border: none;
+    box-sizing: border-box;
+    background-color: rgba(155, 153, 153, 0.4);
+    color: white;
+    letter-spacing: 3px;
+}
+
+.finalText button:hover {
+    cursor: pointer;
+    background-color: #5e5c5b;
+    transition-duration: 300ms;
+}
+
+.finalText .registerButton {
+    margin: 32px auto 0px auto;
+}
+.showPassword{
+    color: white;
+}
+.showPassword1 {
+    margin-top: -10px;
+    color: white;
+}
+
+.finalText .forgotPassword {
+    color: red;
+    margin: 22px auto;
+    text-align: center;
+}
+.finalText .forgotPassword:hover{
+    font-weight: 700;
+}
+.acceptance {
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+}
+
+.acceptance .conditions {
+    margin: auto;
+    position: absolute;
+    left: 6%;
+    /* padding-bottom: 20px; */
+    text-align: center;
+    color: white;
+}
+
+.acceptance .conditions span {
+    color:red;
+}
+.acceptance .conditions span:hover{
+    font-weight: 700;
+}
+
+/* .acceptance input {
+    position: absolute;
+    top: 9%;
+    left: 9%;
+} */
+
+:is(.finalText) span {
+    color: black;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,21 @@
+.login2::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #f44336;
+    display: none;
+    transition: 1s;
+    margin: auto;
+}
+
+.register2::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+
+

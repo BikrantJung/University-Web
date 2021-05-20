@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+
+  <body>
+    <!-- Main body area  -->
+    <section class="header">
+      <div class="navBar">
+        <img src="images/logo.png" class="logo" alt="EduFort" />
+        <div class="navDiv">
+          <ul>
+            <li><a class="navLinks" href="">Home</a></li>
+            <li><a class="navLinks" href="">About</a></li>
+            <li><a class="navLinks" href="">Course</a></li>
+            <li><a class="navLinks" href="">Blog</a></li>
+            <li><a class="navLinks" href="">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mainArea">
+        <h1>World's Biggest University</h1>
+        <p>
+          Introducing you to the best university in the world <br />Let's be
+          filled with joy and education
+        </p>
+        <button class="btn"><a href="">Get Started</a></button>
+      </div>
+    </section>
+    <section class="courses">
+      <h1>Courses We Offer</h1>
+      <p>
+        Don't write a code that machine understands, <br />Write a code that
+        human understands.
+      </p>
+    </section>
+
+    <!-- Courses we Offer area with 3 boxes and button in it -->
+    <section class="offers">
+      <div class="offerOption">
+        <h3>Begineer</h3>
+        <p>
+          Guys this is my friendly remainder that if you want to start
+          programming. Only start if this programming is your only life. Just
+          donate your life to programming. In past, those who sacrificed their
+          food, fun and sleep were known as siants, now they are called
+          programmers.
+        </p>
+        <button><a href="">Take Course</a></button>
+      </div>
+      <div class="offerOption">
+        <h3>Intermediate</h3>
+        <p>
+          Guys this is my friendly remainder that if you want to start
+          programming. Only start if this programming is your only life. Just
+          donate your life to programming. In past, those who sacrificed their
+          food, fun and sleep were known as siants, now they are called
+          programmers.
+        </p>
+        <button><a href="">Take Course</a></button>
+      </div>
+      <div class="offerOption">
+        <h3>Expert</h3>
+        <p>
+          Guys this is my friendly remainder that if you want to start
+          programming. Only start if this programming is your only life. Just
+          donate your life to programming. In past, those who sacrificed their
+          food, fun and sleep were known as siants, now they are called
+          programmers.
+        </p>
+        <button><a href="">Take Course</a></button>
+      </div>
+    </section>
+    <!-- Our global campus heading and paragraph box -->
+    <section class="global">
+      <h1>Our Global Campus</h1>
+      <p>Our campuses are widely available globally</p>
+    </section>
+    <!-- 3 universities with their image and explore button in it -->
+    <section class="globalCampus">
+      <section class="campuses campus1">
+        <button class="explorebtn">London</button>
+      </section>
+      <section class="campuses campus2">
+        <button class="explorebtn">Washington</button>
+      </section>
+      <section class="campuses campus3">
+        <button class="explorebtn">New York</button>
+      </section>
+    </section>
+    <!-- Available facilities box -->
+    <section class="facilities">
+      <div>
+        <h1>Available Facilities</h1>
+        <p>
+          Our University provides you with the maximun number of facilites for
+          the comfort of students
+        </p>
+      </div>
+    </section>
+    <!-- Three Images Showing the facility of university -->
+    <section class="facilitiesImage">
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+    <!-- Description about facility with a read more button -->
+    <section class="facilitiesAbout">
+      <div class="aboutFacility">
+        <p>
+          For the growth and development of creative students mind. Our
+          universities provide them with a large, and peaceful libraries
+          containing of thousand of their desired books.
+        </p>
+        <button><a href="">Read More</a></button>
+      </div>
+
+      <div class="aboutFacility">
+        <p>
+          Our university provides a healthy and beautiful cafeterias for the
+          proper and healthy fooding of students.
+        </p>
+        <button><a href="">Read More</a></button>
+      </div>
+      <div class="aboutFacility">
+        <p>
+          For the physical health of students, our university provides a lot of
+          indoor and outdoor game facilities. They can develop their character
+          throught gaming too.
+        </p>
+        <button><a href="">Read More</a></button>
+      </div>
+    </section>
+    <br />
+    <!-- LogIn Box -->
+    <section class="loginArea">
+      <div class="box" id="BOX1">
+        <div class="heading">
+          <h3 class="login" id="LOGIN">Login</h3>
+          <h3 class="register" id="REGISTER">Register</h3>
+        </div>
+        <section>
+          <form method="POST " class="form" id="FORM1">
+            <div class="emailArea">
+              <img src="images/email.png " width="20px " />
+              <input type="email" placeholder="Email Address " required />
+              <span class="line"></span>
+            </div>
+            <div class="emailArea">
+              <img src="images/password1.png" width="18px " />
+              <input
+                type="password"
+                required
+                placeholder="Password"
+                id="SHOWPASSWORD1"
+              />
+              <span class="line"></span>
+            </div>
+            <div class="emailArea password">
+              <img src="images/password1.png" width="18px " />
+              <input
+                type="password"
+                required
+                placeholder="Confirm Password"
+                id="SHOWPASSWORD2"
+              />
+              <span class="line"></span>
+            </div>
+            <div class="showPassword">
+              <input type="checkbox" onclick="showPassword()" /> Show Password
+            </div>
+            <div class="finalText">
+              <button type="button"><a href=" ">Send Code</a></button>
+              <p class="forgotPassword"><a href="# ">Forgot Password</a></p>
+            </div>
+          </form>
+          <form method="POST " class="form2" id="FORM2">
+            <div class="emailArea">
+              <img src="images/user.png " width="20px " />
+              <input type="text" placeholder="Username" required />
+              <span class="line"></span>
+            </div>
+
+            <div class="emailArea">
+              <img src="images/email.png " width="20px " />
+              <input type="email" placeholder="Email Address " required />
+              <span class="line"></span>
+            </div>
+            <div class="emailArea">
+              <img src="images/password1.png " width="18px " />
+              <input
+                type="password"
+                required
+                placeholder="Password"
+                id="SHOWPASSWORD3"
+              />
+              <span class="line"></span>
+            </div>
+            <div class="showPassword1">
+              <input type="checkbox" onclick="showPasswordnew()" /> Show
+              Password
+            </div>
+            <div class="acceptance">
+              <div>
+                <input type="checkbox" />
+              </div>
+              <p class="conditions">
+                I have read and agreed to
+                <span class="terms"><a href="">Terms</a></span>
+              </p>
+            </div>
+            <div class="finalText">
+              <button type="button " class="registerButton">
+                <a href=" ">Register</a>
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

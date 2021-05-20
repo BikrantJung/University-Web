@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@font-face {
+  font-family: "Helvetica";
+  src: url(Helvetica\ Neue\ LTW0697BlkCnObl/Helvetica);
+}
+
+:root {
+  --image-shadow: 2px 3px 10px gray;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(146, 146, 146, 0.3);
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/banner.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+}
+.navBar a:hover {
+  color: white;
+}
+.navBar a {
+  text-decoration: none;
+  color: rgb(189, 189, 189);
+}
+
+.logo {
+  width: 150px;
+  margin: 40px;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+  transition-duration: 400ms;
+}
+
+.navBar ul {
+  list-style: none;
+  float: right;
+  margin-top: 40px;
+}
+
+.navBar ul li {
+  display: inline-block;
+  padding: 0px 25px;
+}
+
+/* A RED LINE UNDER THE LINKS IN NAVIGATION BAR */
+
+.navBar ul li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 300ms;
+}
+
+.navBar ul li:hover::after {
+  width: 100%;
+}
+
+/* Main area */
+
+.mainArea {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.mainArea h1 {
+  font-weight: 900;
+  font-size: 50px;
+  letter-spacing: 5px;
+  color: #fff;
+  margin: 50px auto 20px auto;
+}
+
+.mainArea p {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 10px auto;
+  color: #fffa;
+}
+
+.mainArea .btn {
+  border: none;
+  background: none;
+  margin: 20px auto;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 14px;
+  border: 1px solid white;
+  position: relative;
+}
+
+.mainArea .btn a {
+  text-decoration: none;
+  color: white;
+  font-family: "Helvetica";
+}
+
+.mainArea .btn::before {
+  content: "";
+  height: 1px;
+  width: 15%;
+  position: absolute;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.mainArea .btn::after {
+  content: "";
+  height: 1px;
+  width: 15%;
+  position: absolute;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  top: 50%;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+.mainArea button:hover {
+  background-color: rgba(244, 67, 54, 0.3);
+  box-shadow: 1px 1px 3px gray;
+  transform: scale(1.1);
+  transition-duration: 400ms;
+}
+
+/* Styling for the courses */
+
+.courses {
+  display: flex;
+  flex-direction: column;
+}
+
+.courses h1 {
+  margin: 50px auto 10px auto;
+  font-size: 40px;
+}
+
+.courses p {
+  margin: 10px auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Offers */
+
+.offers {
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+}
+
+.offers .offerOption {
+  background-color: rgba(255, 192, 203, 0.3);
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.offers .offerOption:hover {
+  box-shadow: 1px 1px 10px gray;
+  transform: scale(1.01);
+  transition-duration: 300ms;
+}
+
+.offers .offerOption h3 {
+  text-align: center;
+  padding: 30px 0px 10px 0px;
+  font-weight: 800;
+}
+
+.offers .offerOption p {
+  text-align: center;
+  padding: 10px;
+}
+
+.offers .offerOption button {
+  border: none;
+  background: rgba(255, 69, 0, 0.3);
+  margin: 10px auto 10px auto;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 14px;
+  border: 1px solid white;
+  position: relative;
+}
+
+.offers .offerOption button a {
+  text-decoration: none;
+  color: black;
+}
+
+.offers .offerOption button:hover {
+  background: rgba(255, 69, 0, 0.7);
+  box-shadow: 1px 1px 10px gray;
+  transform: scale(1.1);
+  transition-duration: 300ms;
+}
+
+/* Three campuses area */
+
+.global {
+  display: flex;
+  flex-direction: column;
+}
+
+.global h1 {
+  margin: 50px auto 10px auto;
+  font-size: 40px;
+}
+
+.global p {
+  margin: auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+.globalCampus {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px 100px;
+}
+
+.globalCampus .campuses {
+  height: 500px;
+  margin: 10px;
+  position: relative;
+}
+
+.globalCampus .campus1 {
+  background-image: url(images/london.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.globalCampus .campus2 {
+  background-image: url(images/washington.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.globalCampus .campus3 {
+  background-image: url(images/newyork.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.explorebtn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  margin: 10px auto 10px auto;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 14px;
+  border: 1px solid white;
+}
+
+.explorebtn:hover {
+  transition-duration: 300ms;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Facilities Area */
+
+.facilities div {
+  display: flex;
+  flex-direction: column;
+}
+
+.facilities div h1 {
+  margin: 40px auto 10px auto;
+  font-size: 40px;
+}
+
+.facilities div p {
+  margin: auto;
+  font-size: 18px;
+}
+
+.facilitiesImage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 50px;
+  margin-bottom: 6px;
+}
+
+.facilitiesImage div {
+  margin: 10px;
+  height: 300px;
+  box-shadow: var(--image-shadow);
+  background-position: center;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.facilitiesImage div:hover {
+  transform: scale(1.06);
+  transition-duration: 400ms;
+}
+
+.facilitiesImage :nth-child(1) {
+  background-image: url("images/library.png");
+  background-repeat: no-repeat;
+}
+
+.facilitiesImage :nth-child(2) {
+  background-image: url("images/cafeteria.png");
+  background-repeat: no-repeat;
+}
+
+.facilitiesImage :nth-child(3) {
+  background-image: url("images/basketball.png");
+  background-repeat: no-repeat;
+}
+
+.facilitiesAbout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0px 50px;
+  align-content: center;
+  gap: 10px;
+}
+
+.facilitiesAbout p {
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+}
+
+.aboutFacility {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 192, 203, 0.3);
+}
+
+.aboutFacility button {
+  border: none;
+  background: rgba(255, 69, 0, 0.3);
+  margin: 10px auto 10px auto;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 14px;
+  border: 1px solid white;
+  position: relative;
+}
+
+.aboutFacility button:hover {
+  background: rgba(255, 69, 0, 0.7);
+  box-shadow: 1px 1px 10px gray;
+  transform: scale(1.1);
+  transition-duration: 300ms;
+}
+
+.facilitiesAbout :nth-child(2) button {
+  margin-top: 40px;
+}

@@ -1,0 +1,58 @@
+@media (max-width: 900px) and (min-width: 300px) {
+  body{
+      /* margin: 0px 5px; */
+      
+  }
+  .navBar {
+    /* background: rgb(255, 255, 255); */
+    
+    display: block;
+  }
+  .header {
+    background-size: 1000px;
+  }
+  .navBar ul {
+    margin: auto;
+    /* display: flex; */
+    float: none;
+  }
+  .logo {
+    width: 100px;
+    margin: 20px;
+  }
+  .navBar ul li {
+    padding: 0 10px;
+  }
+  .mainArea {
+    margin-top: 50px;
+  }
+  .mainArea h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 0px auto;
+  }
+  .global h1{
+      font-size: 30px;
+  }
+  .offers {
+    flex-direction: column;
+  }
+  .globalCampus {
+    display: block;
+    margin: 0px;
+  }
+  .globalCampus .campuses {
+    height: 350px;
+  }
+  .facilitiesImage {
+    display: block;
+    margin: 0;
+  }
+  .facilitiesAbout {
+    display: block;
+    margin: 20px 0px;
+  }
+  .aboutFacility {
+    margin: 10px;
+  }
+}
